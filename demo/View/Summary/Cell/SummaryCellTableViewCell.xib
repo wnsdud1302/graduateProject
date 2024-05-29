@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SummaryCellTableViewCell" id="fQI-Va-gdv" customClass="SummaryCellTableViewCell" customModule="demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fQI-Va-gdv" id="XPa-i9-N3H">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myh-nT-3Lz">
+                        <rect key="frame" x="20" y="12" width="70" height="20.333333333333332"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="1ug-xa-yXu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="myh-nT-3Lz" firstAttribute="top" secondItem="XPa-i9-N3H" secondAttribute="top" constant="12" id="0hG-nW-1rW"/>
+                    <constraint firstItem="myh-nT-3Lz" firstAttribute="leading" secondItem="XPa-i9-N3H" secondAttribute="leading" constant="20" symbolic="YES" id="Nhq-dE-y4N"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="myh-nT-3Lz" secondAttribute="trailing" constant="328" id="NsH-VH-EnM"/>
+                    <constraint firstAttribute="bottom" secondItem="myh-nT-3Lz" secondAttribute="bottom" constant="11.67" id="a2C-2C-MkG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DateLabel" destination="myh-nT-3Lz" id="CWe-36-652"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="21"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordViewController" customModule="demo" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteBarItem" destination="fNn-qY-ooO" id="eL3-p4-dqp"/>
+                <outlet property="tableview" destination="16M-ni-nhl" id="WQ2-dZ-ZUW"/>
+                <outlet property="view" destination="eAx-NU-Pcl" id="wWR-PD-76N"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eAx-NU-Pcl">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="16M-ni-nhl">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordCell" translatesAutoresizingMaskIntoConstraints="NO" id="Kvu-Kj-YEQ" customClass="RecordCell" customModule="demo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="400" width="390" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kvu-Kj-YEQ" id="tc2-88-P03">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lzZ-QM-4UI"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="16M-ni-nhl" firstAttribute="top" secondItem="lzZ-QM-4UI" secondAttribute="top" id="2SA-vh-hrQ"/>
+                <constraint firstItem="16M-ni-nhl" firstAttribute="centerX" secondItem="eAx-NU-Pcl" secondAttribute="centerX" id="6LJ-Bt-UTY"/>
+                <constraint firstItem="16M-ni-nhl" firstAttribute="leading" secondItem="lzZ-QM-4UI" secondAttribute="leading" id="CKO-YI-Jfq"/>
+                <constraint firstItem="16M-ni-nhl" firstAttribute="bottom" secondItem="lzZ-QM-4UI" secondAttribute="bottom" id="lhI-hb-5pg"/>
+            </constraints>
+            <point key="canvasLocation" x="9.2307692307692299" y="-427.25118483412319"/>
+        </view>
+        <barButtonItem title="Item" image="trash.fill" catalog="system" width="30" id="fNn-qY-ooO">
+            <connections>
+                <action selector="deleteContents" destination="-1" id="Dnf-RW-nIn"/>
+            </connections>
+        </barButtonItem>
+    </objects>
+    <resources>
+        <image name="trash.fill" catalog="system" width="119" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
